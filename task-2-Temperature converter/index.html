@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="stackbootstrap.css">
+</head>
+
+<body>
+    <div class="pop">
+    <div class="container">
+        <div>
+            <h1 class="tile">
+                <span class="text_1">Convert Temperature <br> From Celsius To Fahrenheit</span><span class="text_2">Convert Temperature <br> From Celsius To Kelvin</span>
+            </h1>    
+        </div>
+        <div class="card-group" >
+            <div class="card input-card" >
+                <div class="card-body" >
+                    <h5 class="card-title">Input Temperature In Celsius</h5>
+                    <div class="form-group">
+                        <label for="celsiusInput"> Input In Celsius :</label>
+                        <input type="number" class="form-control" id="celsiusInput" placeholder="Enter The Temperature">
+                    </div>
+                    <button class="btn-primary" id="convertButton">Convert</button>
+                    <button class="btn-secondary" id="resetButton">Reset</button>
+                </div>
+            </div>
+            <div class="card result-card">
+                <div class="card-body">
+                    <h5 class="card-title">Result</h5>
+                    <div class="output">
+                    <p><strong>Temperature in Fahrenheit:</strong><br> <span id="fahrenheitResult">-F</span></p>
+                    <p><strong>Temperature in Kelvin:</strong> <br> <span id="kelvinResult">-K</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

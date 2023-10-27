@@ -1,0 +1,129 @@
+/* Add your custom styles here */
+.tile {
+    margin-top: 2%;
+    text-align: center;
+    font-weight: 750;
+    text-transform: capitalize;
+    font-style: italic;
+}
+* {
+  background-color: rgb(236, 134, 211);
+}
+
+
+  h1 {
+    font-size: 30px;
+  }
+  
+  .text_1 {
+    animation: text1;
+  }
+  
+  .text_2 {
+    animation: text2;
+  }
+  
+  .text_1, .text_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 20s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+  }
+  
+  .text_1::after, .text_2::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  }
+  
+  @keyframes text2 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 21.2em;
+    }
+  }
+  
+  @keyframes text1 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    10%, 40% {
+      width: 17em;
+    }
+  }
+  
+  @keyframes caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+.card {
+    margin: 20px;
+}
+
+.result-card {
+    background-color: #ed3434;
+}
+
+.container {
+    width: 10%;
+    height: 20%;
+    margin-top: 3%;
+}
+.container .card-body {
+    height: 400px;
+    
+  
+} 
+.container .card-title {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 2.3rem;
+    font-weight: 700;
+    font-style: italic;
+    
+
+}
+.container .form-group {
+    margin-top: 4%;
+    font-size: 1.5rem;
+}
+.container .form-control {
+   height: 80px;
+   font-size: 1.5rem;
+}
+.container .btn-primary {
+  font-size: 1.5rem;
+  margin-left: 30%;
+  margin-top: 2%;
+  border-radius: 5px;
+  background-color: red;
+
+}
+.container .btn-secondary {
+  font-size: 1.5rem;
+  margin-left: 1.5%;
+  border-radius: 5px;
+}
+.container .output {
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: solid;
+  margin-top: 10%;
+  font-size: 1.5rem;
+}
+
+
+    
